@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  padding: 20px 100px;
+  background-color: aquamarine;
+  p {
+    font-size: 24px;
+  }
+}
+.container {
+  margin-top: 40px;
+  .productComponent {
+    cursor: pointer;
+    margin-bottom: 30px;
+    height: 650px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 3px gray;
+    .imgBox {
+      text-align: center;
+      height: 400px;
+      overflow: hidden;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      .img-fluid {
+        transform: scale(0.7);
+      }
+    }
+  }
+  p {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
