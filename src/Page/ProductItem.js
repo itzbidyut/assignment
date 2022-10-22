@@ -3,20 +3,19 @@ import { useParams } from "react-router-dom";
 import Loading from "../Components/Loading";
 export default function ProductItem() {
   const [product, setProduct] = useState();
-
+  let { id } = useParams();
+  
   const getApiData = async () => {
     const response = await fetch(
       `https://fakestoreapi.com/products/${id}`
     ).then((response) => response.json());
     setProduct(response);
-    console.log(`product-----`, product);
   };
 
   useEffect(() => {
     getApiData();
   }, []);
 
-  let { id } = useParams();
   return (
     <div className="container">
       {product ? (

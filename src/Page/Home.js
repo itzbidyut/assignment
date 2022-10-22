@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {   Link } from "react-router-dom";
 
 import Loading from "../Components/Loading";
 const api = `https://fakestoreapi.com/products`;
